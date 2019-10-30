@@ -232,11 +232,11 @@ def zhong():
         if number[ans_2[i].num] == 1:
             x = ans_2[i].num
         if number[ans_2[i].num] == 2:
-            k=(1.0+0.9/(130+13)*((ans_1[i].num-1)*10+k-1))*1.0
+            k=(1.0+0.9/(130+13)*((ans_2[i].num-1)*10+k-1))*1.0
             gra += k
             return k 
 
-    k=(0.9 / (130000 + 13000 + 1300 + 130 + 13)*((ans_1[5].num - 1) * 10000 + (ans_1[4].num - 1) * 1000 + (ans_1[3].num - 1) * 100 + (ans_1[2].num - 1) * 10 + ans_1[1].num - 1))*1.0
+    k=(0.9 / (130000 + 13000 + 1300 + 130 + 13)*((ans_2[5].num - 1) * 10000 + (ans_2[4].num - 1) * 1000 + (ans_2[3].num - 1) * 100 + (ans_2[2].num - 1) * 10 + ans_2[1].num - 1))*1.0
     gra +=k
     return k
 
@@ -508,8 +508,6 @@ def AI_split_cards(card):
 
 if __name__ == "__main__":
     data = AI_split_cards("&4 #J &J *5 &2 &A $4 *J $5 &10 $7 *4 &5")
-del(kalam)
-del(swaroop)
 
 
     
