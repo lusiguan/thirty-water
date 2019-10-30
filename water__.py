@@ -388,7 +388,7 @@ def ser2(d,index_2) :
         f2[i] = 1
         if index_2 == c2 :
             index_3 = 0
-            for j in range(1,8+1):
+            for j in range(1,9):
                 if f2[j] == 0 :
                     index_3+=1
                     comp_3[index_3] = two[j]
@@ -399,7 +399,7 @@ def ser2(d,index_2) :
 
 
 def ser1(d, index_1): 
-    for i in range(d,13+1):
+    for i in range(d,14):
         f1[i] = 1
         comp_1[index_1] = one[i]
         if index_1 == c1 :
